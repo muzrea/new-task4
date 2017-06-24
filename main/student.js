@@ -1,6 +1,8 @@
 let Person = require('./person')
+
 // Write your code here
-module.exports = function Student(name,age,klass)
+
+function Student(name,age,klass)
 {
 
 	this.klass = klass;
@@ -12,3 +14,4 @@ module.exports = function Student(name,age,klass)
 
 }
 Student.prototype = new Person;
+module.exports = Student
